@@ -1,0 +1,43 @@
+.masterpin {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.masterpin__heading {
+  color: #278eaf;
+  font-size: 20px;
+}
+
+.masterpin__para {
+  color: hsl(0, 0%, 40%);
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+
+.masterpin__input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.masterpin__input > span {
+  color: hsl(0, 0%, 40%);
+  font-size: 14px;
+}
+
+.masterpin__input > input {
+  height: 40px;
+  padding-left: 0.5rem;
+  font-size: 15px;
+  outline: none;
+}
+
+.masterpin > .aqua-btn {
+  text-align: center;
+  padding-block: 0.6rem;
+  border-radius: 4px;
+  margin-top: 4rem;
+}

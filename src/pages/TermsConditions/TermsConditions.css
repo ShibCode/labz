@@ -1,0 +1,34 @@
+.terms {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  padding-block: 3rem;
+}
+
+.terms__container {
+  padding: 1rem;
+  box-shadow: 0 0 20px -7px black;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.terms__para {
+  color: hsl(0, 0%, 40%);
+}
+
+.terms__para > span {
+  color: hsl(194, 53%, 52%);
+}
+
+.terms__actions {
+  display: flex;
+  gap: 1rem;
+  align-self: flex-end;
+}
+
+.terms__actions > * {
+  padding: 0.6rem 1.5rem;
+  border-radius: 4px;
+  font-size: 15px;
+}
