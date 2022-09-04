@@ -48,6 +48,11 @@ const Register = () => {
               <img src="assets/metamask.png" alt="metamask" />
               Connect MetaMask
             </button>
+
+            <button className="register__signOption register__trustwallet">
+              <img src="assets/trustwallet.svg" alt="trustwallet" />
+              TrustWallet
+            </button>
           </div>
         </div>
 

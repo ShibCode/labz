@@ -18,7 +18,8 @@
 }
 
 .terms__para > span {
-  color: hsl(194, 53%, 52%);
+  color: rgb(109 45 231);
+  cursor: pointer;
 }
 
 .terms__actions {

@@ -147,7 +147,7 @@
 .inventory__footer > div {
   font-size: 10px;
   text-align: center;
-  color: #278eaf;
+  color: rgb(109 45 231);
   text-decoration: underline;
   display: flex;
   flex-direction: column;
@@ -165,7 +165,7 @@
 }
 
 .inventory__selected {
-  background-color: #278eaf;
+  background-color: rgb(109 45 231);
   color: white !important;
   text-decoration: none !important;
 }

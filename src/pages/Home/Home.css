@@ -46,13 +46,13 @@
 }
 
 .home__topHeading {
-  color: #278eaf;
+  color: rgb(109 45 231);
   font-size: 28px;
   font-weight: 400;
 }
 
 .home__topSubheading {
-  color: #278eaf;
+  color: rgb(109 45 231);
   font-size: 20px;
   font-weight: 400;
 }
@@ -103,7 +103,7 @@
 
 .home__blockchainSelected > div {
   color: white;
-  background-color: #278eaf;
+  background-color: rgb(109 45 231);
   padding: 1rem;
   font-weight: 300;
   font-size: 18px;
