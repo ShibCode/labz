@@ -5,7 +5,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="footer">
-      <video src="/assets/logo.mp4" autoPlay></video>
+      <img src="/assets/logo.gif" />
     </div>
   );
 };

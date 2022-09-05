@@ -10,12 +10,13 @@
 .verification__topText {
   padding-inline: 1rem;
   text-align: center;
-  color: hsl(0, 0%, 40%);
+  color: white;
 }
 
 .verification__container {
   padding: 1rem;
-  box-shadow: 0 0 20px -7px black;
+  background-color: white;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -27,7 +28,7 @@
 }
 
 .verification__para {
-  color: hsl(0, 0%, 40%);
+  color: black;
   font-size: 15px;
 }
 

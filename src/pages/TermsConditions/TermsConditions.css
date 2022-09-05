@@ -7,14 +7,15 @@
 
 .terms__container {
   padding: 1rem;
-  box-shadow: 0 0 20px -7px black;
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
   gap: 1.5rem;
 }
 
 .terms__para {
-  color: hsl(0, 0%, 40%);
+  color: black;
 }
 
 .terms__para > span {

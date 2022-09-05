@@ -9,7 +9,7 @@
 }
 
 .register__top {
-  background-color: #212121;
+  background-color: transparent;
   padding: 0.5rem 1rem;
   display: flex;
   flex-direction: column;
@@ -122,7 +122,7 @@
   height: 50px;
   font-size: 16px;
   padding-left: 0.75rem;
-  color: hsl(0, 0%, 40%);
+  color: black;
   outline: none;
 }
 
@@ -134,7 +134,7 @@
 }
 
 .register__switchToLogin {
-  color: hsl(0, 0%, 40%);
+  color: white;
   font-size: 18px;
   margin-top: 0.75rem;
 }
