@@ -33,4 +33,5 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
+  padding-inline: 1rem;
 }

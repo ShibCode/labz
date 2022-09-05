@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 
 import "./Register.css";
 
 const Register = () => {
+  const [showLoginPage, setShowLoginPage] = useState(false);
+
   return (
     <div className="register__wrapper">
       <div className="register">
@@ -19,7 +21,7 @@ const Register = () => {
             </div>
 
             <div className="register__headerCenter">
-              <span>Create Account</span>
+              <span>{showLoginPage ? "Login" : "Create Account"}</span>
             </div>
           </div>
 
@@ -71,19 +73,31 @@ const Register = () => {
               placeholder="Password"
             />
 
-            <input
-              type="password"
-              className="register__input"
-              placeholder="Confirm Password"
-            />
+            {!showLoginPage && (
+              <input
+                type="password"
+                className="register__input"
+                placeholder="Confirm Password"
+              />
+            )}
 
             <Link to="/terms-conditions" className="aqua-btn">
-              Create Account
+              {showLoginPage ? "Login" : "Create Account"}
             </Link>
           </form>
 
           <span className="register__switchToLogin">
-            Already have an account? <span>Log in</span>
+            {showLoginPage
+              ? "Don't have an account?"
+              : "Already have an account?"}{" "}
+            {}
+            <span
+              onClick={() => {
+                setShowLoginPage((prev) => !prev);
+              }}
+            >
+              {showLoginPage ? "Register" : "Login"}
+            </span>
           </span>
         </div>
       </div>

@@ -58,6 +58,10 @@
   padding-left: 0.5rem;
   font-size: 15px;
   outline: none;
+  background-color: transparent;
+  border: 2px solid rgb(109 45 231);
+  color: white;
+  border-radius: 4px;
 }
 
 .masterpin .aqua-btn {
