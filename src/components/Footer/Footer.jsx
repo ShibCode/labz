@@ -4,9 +4,10 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <img src="/assets/logo.gif" />
-    </div>
+    // <div className="footer">
+    //   <img src="/assets/logo.gif" />
+    // </div>
+    null
   );
 };
 

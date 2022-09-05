@@ -6,18 +6,31 @@ import Footer from "../../components/Footer/Footer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
+
+import { useNavigate } from "react-router-dom";
 
 import "./Home.css";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   const [selectedBlockChain, setSelectedBlockChain] = useState("");
 
   return (
     <div className="home">
       <div>
         <div className="home__header">
-          <div>
+          <div className="home__headerLeft">
+            <FontAwesomeIcon
+              icon={faChevronLeft}
+              onClick={() => navigate(-1)}
+            />
+
+            <img src="assets/logo-gif.gif" alt="logo" />
+          </div>
+          <div className="home__user">
             <FontAwesomeIcon icon={faUser} />
           </div>
         </div>

@@ -19,8 +19,7 @@ const Register = () => {
             </div>
 
             <div className="register__headerCenter">
-              <span>Create</span>
-              <span>labz ez widget</span>
+              <span>Create Account</span>
             </div>
           </div>
 
@@ -41,7 +40,7 @@ const Register = () => {
             </button>
 
             <span className="register__topText">
-              Or you can connect a wallet through MetaMask:
+              Or connect MetaMask or TrustWallet:
             </span>
 
             <button className="register__signOption register__metamask">

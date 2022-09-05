@@ -1,9 +1,30 @@
 .verification {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.verification__header {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px 1rem;
+}
+
+.verification__header > svg {
+  cursor: pointer;
+}
+
+.verification__header > img {
+  width: 20px;
+}
+
+.verification__content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-block: 1rem;
-  max-width: 600px;
   gap: 1rem;
 }
 
@@ -14,8 +35,8 @@
 }
 
 .verification__container {
+  border: 2px solid rgb(109 45 231);
   padding: 1rem;
-  background-color: white;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -28,7 +49,7 @@
 }
 
 .verification__para {
-  color: black;
+  color: white;
   font-size: 15px;
 }
 
@@ -36,7 +57,7 @@
   margin-block: 0.75rem;
   height: 40px;
   padding-left: 0.5rem;
-  color: hsl(0, 0%, 40%);
+  color: black;
   font-size: 15px;
 }
 

@@ -2,20 +2,35 @@
   display: flex;
   flex-direction: column;
   max-width: 600px;
-  padding-block: 3rem;
+}
+
+.terms__header {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px 1rem;
+}
+
+.terms__header > svg {
+  cursor: pointer;
+}
+
+.terms__header > img {
+  width: 20px;
 }
 
 .terms__container {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  border: 2px solid rgb(109 45 231);
   border-radius: 8px;
   gap: 1.5rem;
 }
 
 .terms__para {
-  color: black;
+  color: white;
 }
 
 .terms__para > span {

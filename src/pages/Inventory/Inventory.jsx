@@ -28,12 +28,17 @@ export default function Inventory() {
     <div className="inventory">
       <div className="header__wrapper">
         <div className="inventory__header">
-          <FontAwesomeIcon
-            icon={faChevronLeft}
-            className="inventory__headerBack"
-            onClick={() => navigate(-1)}
-          />
-          <div>
+          <div className="inventory__headerLeft">
+            <FontAwesomeIcon
+              icon={faChevronLeft}
+              className="inventory__headerBack"
+              onClick={() => navigate(-1)}
+            />
+
+            <img src="assets/logo-gif.gif" alt="logo" />
+          </div>
+
+          <div className="inventory__user">
             <FontAwesomeIcon icon={faUser} />
           </div>
         </div>

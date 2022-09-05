@@ -12,7 +12,7 @@
 }
 
 .inventory__header {
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +20,17 @@
   width: 100%;
 }
 
-.inventory__header > div {
+.inventory__header img {
+  width: 20px;
+}
+
+.inventory__headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.inventory__user {
   border: 2px solid white;
   border-radius: 50%;
   width: 30px;
@@ -116,7 +126,7 @@
 }
 
 .inventory__centerMain {
-  min-height: calc(100vh - 60px - 84px - 27px - 2rem - 1rem - 46px);
+  min-height: calc(100vh - 60px - 84px - 27px - 2rem - 1rem - 46px - 1rem);
 }
 
 .inventory__empty {
