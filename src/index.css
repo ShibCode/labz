@@ -35,3 +35,6 @@ body {
   min-height: 100vh;
   padding-inline: 1rem;
 }
+input::placeholder {
+  font-family: Open Sans;
+}

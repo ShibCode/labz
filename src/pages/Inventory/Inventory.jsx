@@ -64,18 +64,47 @@ export default function Inventory() {
 
       <div className="inventory__centerWrapper">
         <div className="inventory__center">
-          <div className="inventory__centerTop">
-            <h1 className="inventory__centerHeading">NFT Inventory</h1>
-
-            <span className="inventory__centerSubHeading">
-              Last updated a few seconds ago
-            </span>
+          <div className="inventory__centerLeft">
+            <div className="inventory__selected">
+              <FontAwesomeIcon icon={faCoins} />
+              <span>Tokens</span>
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faArrowRightArrowLeft} />
+              <span>Transactions</span>
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faRotate} />
+              <span>Swap</span>
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faChartLine} />
+              <span>Activity</span>
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faGrip} />
+              <span>App</span>
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faGear} />
+              <span>Settings</span>
+            </div>
           </div>
 
-          <div className="inventory__centerMain">
-            <h1 className="inventory__empty">
-              We didn't find anything in your inventory...
-            </h1>
+          <div className="inventory__centerRight">
+            <div className="inventory__centerTop">
+              <h1 className="inventory__centerHeading">NFT Inventory</h1>
+
+              <span className="inventory__centerSubHeading">
+                Last updated a few seconds ago
+              </span>
+            </div>
+
+            <div className="inventory__centerMain">
+              <h1 className="inventory__empty">
+                We didn't find anything in your inventory...
+              </h1>
+            </div>
           </div>
         </div>
       </div>
