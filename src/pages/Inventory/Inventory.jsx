@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Footer from "../../components/Footer/Footer";
 
@@ -20,9 +20,12 @@ import {
 import { useNavigate } from "react-router-dom";
 
 import "./Inventory.css";
+import ProfileDropdown from "../../components/ProfileDropdown/ProfileDropdown";
 
 export default function Inventory() {
   const navigate = useNavigate();
+
+  const [showDropdown, setShowDropdown] = useState(false);
 
   return (
     <div className="inventory">
@@ -39,7 +42,14 @@ export default function Inventory() {
           </div>
 
           <div className="inventory__user">
-            <FontAwesomeIcon icon={faUser} />
+            <FontAwesomeIcon
+              icon={faUser}
+              onClick={() => {
+                setShowDropdown((prev) => !prev);
+              }}
+            />
+
+            <ProfileDropdown isActive={showDropdown} />
           </div>
         </div>
       </div>

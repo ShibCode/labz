@@ -12,11 +12,13 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { useNavigate } from "react-router-dom";
 
 import "./Home.css";
+import ProfileDropdown from "../../components/ProfileDropdown/ProfileDropdown";
 
 const Home = () => {
   const navigate = useNavigate();
 
   const [selectedBlockChain, setSelectedBlockChain] = useState("");
+  const [showDropdown, setShowDropdown] = useState(false);
 
   return (
     <div className="home">
@@ -31,7 +33,12 @@ const Home = () => {
             <img src="assets/logo-gif.gif" alt="logo" />
           </div>
           <div className="home__user">
-            <FontAwesomeIcon icon={faUser} />
+            <FontAwesomeIcon
+              icon={faUser}
+              onClick={() => setShowDropdown((prev) => !prev)}
+            />
+
+            <ProfileDropdown isActive={showDropdown} />
           </div>
         </div>
 
