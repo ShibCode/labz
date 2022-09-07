@@ -1,5 +1,5 @@
 .inventory {
-  --max-width: 600px;
+  --max-width: 1200px;
 
   display: flex;
   flex-direction: column;
@@ -107,7 +107,6 @@
   width: 100%;
   padding: 1rem;
   display: flex;
-  position: relative;
 }
 
 .inventory__centerTop {
@@ -186,9 +185,7 @@
 .inventory__centerLeft {
   display: none;
   flex-direction: column;
-  position: relative;
-  transform: translateX(-90px);
-  width: 75px;
+  width: 100px;
 }
 
 .inventory__centerLeft > div {
@@ -202,7 +199,7 @@
 }
 
 .inventory__centerLeft span {
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
   text-decoration: underline;
 }
@@ -216,7 +213,17 @@
     display: none;
   }
 
+  .inventory__center {
+    padding-left: 0;
+  }
+
   .inventory__centerMain {
     min-height: calc(100vh - 84px - 27px - 2rem - 1rem - 46px - 1rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .inventory__center {
+    padding-left: 0.5rem;
   }
 }
