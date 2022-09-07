@@ -1,7 +1,9 @@
 .profileDropdown {
+  --scale: 0;
+
   display: flex;
   position: absolute;
-  transform: translate(0, 100px) scaleY(0);
+  transform: translate(-59px, 100px) scaleY(var(--scale));
   background-color: white;
   color: black;
   width: 150px;
@@ -13,7 +15,7 @@
 }
 
 .profileDropdown__isActive {
-  transform: translate(0, 100px) scaleY(1);
+  --scale: 1;
 }
 
 .profileDropdown > span {
