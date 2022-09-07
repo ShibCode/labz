@@ -32,11 +32,11 @@ const Home = () => {
 
             <img src="assets/logo-gif.gif" alt="logo" />
           </div>
-          <div className="home__user">
-            <FontAwesomeIcon
-              icon={faUser}
-              onClick={() => setShowDropdown((prev) => !prev)}
-            />
+          <div
+            className="home__user"
+            onClick={() => setShowDropdown((prev) => !prev)}
+          >
+            <FontAwesomeIcon icon={faUser} />
 
             <ProfileDropdown isActive={showDropdown} />
           </div>

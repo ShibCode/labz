@@ -41,13 +41,11 @@ export default function Inventory() {
             <img src="assets/logo-gif.gif" alt="logo" />
           </div>
 
-          <div className="inventory__user">
-            <FontAwesomeIcon
-              icon={faUser}
-              onClick={() => {
-                setShowDropdown((prev) => !prev);
-              }}
-            />
+          <div
+            className="inventory__user"
+            onClick={() => setShowDropdown((prev) => !prev)}
+          >
+            <FontAwesomeIcon icon={faUser} />
 
             <ProfileDropdown isActive={showDropdown} />
           </div>
