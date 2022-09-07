@@ -74,6 +74,10 @@ export default function Inventory() {
         <div className="inventory__center">
           <div className="inventory__centerLeft">
             <div className="inventory__selected">
+              <FontAwesomeIcon icon={faHorse} />
+              <span>NFT</span>
+            </div>
+            <div>
               <FontAwesomeIcon icon={faCoins} />
               <span>Tokens</span>
             </div>
